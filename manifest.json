@@ -1,0 +1,20 @@
+{
+    "name": "YouTube Subscriptions Feed",
+    "description": "Create a Chrome extension that transforms YouTube’s homepage to show only videos by the channels I’m subscribed to.",
+    "version": "0.1",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage", "scripting"],
+    "action": {
+        "default_popup": "settings.html"
+    },
+    "options_page": "settings.html",
+    "icons": {
+        "16": "/assets/images/youtube_feed_icon_16.png",
+        "32": "/assets/images/youtube_feed_icon_32.png",
+        "48": "/assets/images/youtube_feed_icon_48.png",
+        "128": "/assets/images/youtube_feed_icon_128.png"
+    }
+}
