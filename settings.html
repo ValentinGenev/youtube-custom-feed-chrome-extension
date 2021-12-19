@@ -8,14 +8,22 @@
             <h1>YouTube Subscriptions Feed</h1>
             <p>In order for this extension to work your subscriptions must be public.</p>
         </header>
-        <form id="youtube_user_name">
+        <form id="request_data">
             <fieldset>
-                <label for="name">YouTube user name</label>
-                <input id="name" name="name" type="text" placeholder="Jon Doe" required>
+                <label for="channel_id">YouTube user ID</label>
+                <input id="channel_id" name="channel_id" type="password" placeholder="XXXXXXXXXX-XX-XXXXXXXX" required>
+                <p><a href="https://support.google.com/youtube/answer/3250431?hl=en" target="_blank">Find your YouTube user & channel IDs</a></p>
+            </fieldset>
+            <fieldset>
+                <label for="api_key">Google API Key</label>
+                <input id="api_key" name="api_key" type="password" placeholder="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" required>
+                <p><a href="https://developers.google.com/youtube/v3/getting-started" target="_blank">Learn how to obtain API KEY</a></p>
             </fieldset>
             <input type="submit" value="Save">
         </form>
 
+        <script src="assets/vendor/crypto-js.min.js"></script>
+        <script src="assets/vendor/fp.min.js"></script>
         <script src="assets/js/settings.js"></script>
     </body>
 </html>

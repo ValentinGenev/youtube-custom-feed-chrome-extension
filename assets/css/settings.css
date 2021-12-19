@@ -20,8 +20,8 @@ header h1 {
 }
 
 form {
-    display: flex;
-    align-items: flex-end;
+    display: grid;
+    gap: 1rem;
     margin: 1rem 0 0;
     padding: 1rem .5rem;
     background-color: #f9f9f9;
@@ -35,12 +35,16 @@ form input {
 form fieldset {
     flex: 1;
 }
+form fieldset label {
+    display: block;
+    margin-bottom: .25rem;
+}
 form fieldset input {
     width: 100%;
+    margin-bottom: .25rem;
     border: 1px solid #ccc;
 }
 form input[type=submit] {
-    margin-left: 1rem;
     text-transform: uppercase;
     color: #fff;
     border: 1px solid #c00;
